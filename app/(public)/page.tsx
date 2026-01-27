@@ -9,6 +9,8 @@ import GetinTouch from "./blocks/get-in-touch";
 import TravelersGuide from "./blocks/travelers-guide";
 import Places from "./blocks/places";
 import Iframe from "./blocks/iframe";
+import Purchase from "./blocks/purchase";
+import PlaceGrid from "./blocks/place-grid";
 
 export default function Home() {
   return (
@@ -29,8 +31,12 @@ export default function Home() {
           <TravelersGuide />
           <Places />
           <Iframe />
+          <Purchase />
+          <PlaceGrid />
         </div>
       </div>
+
+      <div></div>
     </div>
   );
 }
