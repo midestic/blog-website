@@ -42,21 +42,31 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
   return (
-    <NavigationMenu className="z-50 w-full px-[100px] py-[10px] bg-transparent fixed">
-      <div>
-        <Image src={"/icons/Logo.svg"} width={133} height={55} alt="logo" />
-      </div>
+    // <div className="z-10 flex justify-center fixed w-full">
+    <div
+      className="
+  fixed z-10 w-full flex justify-center
+  bg-white/10 backdrop-blur-lg
+  border-b border-white/20
+  shadow-sm
+"
+    >
+      <NavigationMenu className=" w-full px-[100px] py-[10px] bg-transparent  max-w-[1620px] mx-auto  p-[30px] rounded-full">
+        <div>
+          <Image src={"/icons/Logo.svg"} width={133} height={55} alt="logo" />
+        </div>
 
-      <NavigationMenuList>
-        {components.map((item) => (
-          <NavigationMenuItem key={item.title}>
-            <NavigationMenuLink asChild>
-              <Link href={item.href}>{item.title}</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        ))}
-      </NavigationMenuList>
-    </NavigationMenu>
+        <NavigationMenuList>
+          {components.map((item) => (
+            <NavigationMenuItem key={item.title}>
+              <NavigationMenuLink asChild>
+                <Link href={item.href}>{item.title}</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+          ))}
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 }
 

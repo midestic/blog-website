@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dmSans.variable}>{children}</body>
+      <body suppressHydrationWarning className={dmSans.variable}>
+        <div className="max-w-[1920px] mx-auto">{children}</div>
+      </body>
     </html>
   );
 }

@@ -11,10 +11,12 @@ import Places from "./blocks/places";
 import Iframe from "./blocks/iframe";
 import Purchase from "./blocks/purchase";
 import PlaceGrid from "./blocks/place-grid";
+import Slider from "./blocks/slider";
+import Subscribe from "./blocks/subscribe";
 
 export default function Home() {
   return (
-    <div>
+    <div className="space-y-[50px]">
       <HeroSection />
 
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-[50px] px-[50px] bg-[#f4f4f4]">
@@ -36,7 +38,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div></div>
+      <div>
+        <Slider />
+        <Subscribe />
+      </div>
     </div>
   );
 }
