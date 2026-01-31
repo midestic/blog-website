@@ -37,11 +37,6 @@ export default function Home() {
           <PlaceGrid />
         </div>
       </div>
-
-      <div>
-        <Slider />
-        <Subscribe />
-      </div>
     </div>
   );
 }

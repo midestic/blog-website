@@ -1,7 +1,9 @@
+import Slider from "../blocks/slider";
 import GridOne from "./grid-one";
 import GridTwo from "./grid-two";
 import SectionFive from "./section-five";
 import SectionOne from "./section-one";
+import SectionSix from "./section-six";
 import Sponsors from "./sponsors";
 
 export default function page() {
@@ -34,6 +36,12 @@ export default function page() {
       <div>
         <SectionFive />
       </div>
+
+      <div>
+        <SectionSix />
+      </div>
+
+      {/* <Slider /> */}
     </div>
   );
 }
