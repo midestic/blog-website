@@ -18,6 +18,24 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
   );
 }
 
+function ContactInput({
+  className,
+  type,
+  ...props
+}: React.ComponentProps<"input">) {
+  return (
+    <input
+      type={type}
+      data-slot="input"
+      className={cn(
+        "focus-visible:border focus-visible:border-primary-color  file:text-foreground placeholder:font-[400] placeholder:text-[20px] placeholder:text-[#C4C4C4] selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border h-[78px] w-full min-w-0 rounded-[8px] border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
 function SubscribeInput({
   className,
   type,
@@ -36,4 +54,4 @@ function SubscribeInput({
   );
 }
 
-export { Input, SubscribeInput };
+export { Input, SubscribeInput, ContactInput };

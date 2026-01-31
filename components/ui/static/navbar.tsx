@@ -41,7 +41,7 @@ const components: { title: string; href: string; description: string }[] = [
 
   {
     title: "Contacts",
-    href: "/tips",
+    href: "/contact",
     description: "Visually or semantically separates content.",
   },
 ];
