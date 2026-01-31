@@ -35,7 +35,13 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Tips",
-    href: "/docs/primitives/scroll-area",
+    href: "/tips",
+    description: "Visually or semantically separates content.",
+  },
+
+  {
+    title: "Contacts",
+    href: "/tips",
     description: "Visually or semantically separates content.",
   },
 ];
