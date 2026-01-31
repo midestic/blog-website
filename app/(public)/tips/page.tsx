@@ -1,4 +1,5 @@
 import SectionOne from "./section-one";
+import TipsGrid from "./tips-grid";
 
 export default function page() {
   return (
@@ -12,6 +13,8 @@ export default function page() {
 
       <div className="px-[100px] space-y-[50px]">
         <SectionOne />
+
+        <TipsGrid />
       </div>
     </div>
   );
