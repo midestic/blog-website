@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { PostsProvider } from "@/context/PostsContext";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning className={dmSans.variable}>
-        <div className="max-w-[1920px] mx-auto">{children}</div>
+        <PostsProvider>
+          <div className="max-w-[1920px] mx-auto">{children}</div>
+        </PostsProvider>
       </body>
     </html>
   );
