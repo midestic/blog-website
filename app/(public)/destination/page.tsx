@@ -1,3 +1,12 @@
+import {
+  DestinationTrigger,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import SouthAmerica from "./south-america";
+
 export default function page() {
   return (
     <div className="space-y-[50px]">
@@ -24,6 +33,23 @@ export default function page() {
             agbado eba from blu blu recruit electricty super super blu our blu
           </p>
         </div>
+      </div>
+
+      <div className="w-full px-[124px]">
+        <Tabs defaultValue="south" className="w-full ">
+          <TabsList className="flex justify-between w-full bg-white">
+            <DestinationTrigger value="south">South America</DestinationTrigger>
+            <DestinationTrigger value="north">North America</DestinationTrigger>
+            <DestinationTrigger value="europe">Europe</DestinationTrigger>
+            <DestinationTrigger value="africa">Africa</DestinationTrigger>
+            <DestinationTrigger value="australia">Australia</DestinationTrigger>
+            <DestinationTrigger value="asia">Asia</DestinationTrigger>
+          </TabsList>
+          <TabsContent className="mt-[100px]" value="south">
+            <SouthAmerica />
+          </TabsContent>
+          <TabsContent value="north">Change your password here.</TabsContent>
+        </Tabs>
       </div>
     </div>
   );

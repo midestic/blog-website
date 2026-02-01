@@ -9,13 +9,14 @@ import {
 } from "react";
 import { api } from "@/lib/api";
 
-type Post = {
+export type Post = {
   _id: string;
   title: string;
   country: string;
   category: string;
   image?: string;
   comments: Comment[];
+  createdAt: string;
 };
 
 type Comment = {
@@ -26,6 +27,12 @@ type Comment = {
 };
 
 type PostContextType = {
+  southAmerica: any;
+  northAmerica: any;
+  europe: any;
+  africa: any;
+  australia: any;
+  asia: any;
   allPosts: Post[];
   onePost: Post | null;
   isLoading: boolean;
@@ -50,7 +57,7 @@ export function PostsProvider({ children }: { children: ReactNode }) {
         const response = await api.get("/posts");
         setAllPosts(response.data);
       } catch (err: any) {
-        setErrorMessage(err.message || "Something went wrong");
+        setErrorMessage(err.message);
       } finally {
         setIsLoading(false);
       }
@@ -73,9 +80,31 @@ export function PostsProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  const southAmerica = allPosts.filter(
+    (item) => item.category === "south america",
+  );
+
+  const northAmerica = allPosts.filter(
+    (item) => item.category === "north america",
+  );
+
+  const europe = allPosts.filter((item) => item.category === "europe");
+
+  const africa = allPosts.filter((item) => item.category === "africa");
+
+  const australia = allPosts.filter((item) => item.category === "australia");
+
+  const asia = allPosts.filter((item) => item.category === "asia");
+
   return (
     <PostsContext.Provider
       value={{
+        southAmerica,
+        northAmerica,
+        europe,
+        africa,
+        australia,
+        asia,
         allPosts,
         onePost,
         isLoading,
