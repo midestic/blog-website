@@ -6,6 +6,11 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs";
 import SouthAmerica from "./south-america";
+import NorthAmerica from "./north-america";
+import Europe from "./europe";
+import Africa from "./africa";
+import Australia from "./australia";
+import Asia from "./asia";
 
 export default function page() {
   return (
@@ -45,10 +50,32 @@ export default function page() {
             <DestinationTrigger value="australia">Australia</DestinationTrigger>
             <DestinationTrigger value="asia">Asia</DestinationTrigger>
           </TabsList>
-          <TabsContent className="mt-[100px]" value="south">
-            <SouthAmerica />
-          </TabsContent>
-          <TabsContent value="north">Change your password here.</TabsContent>
+
+          <div className="mt-[100px]">
+            <TabsContent value="south">
+              <SouthAmerica />
+            </TabsContent>
+
+            <TabsContent value="north">
+              <NorthAmerica />
+            </TabsContent>
+
+            <TabsContent value="europe">
+              <Europe />
+            </TabsContent>
+
+            <TabsContent value="africa">
+              <Africa />
+            </TabsContent>
+
+            <TabsContent value="australia">
+              <Australia />
+            </TabsContent>
+
+            <TabsContent value="asia">
+              <Asia />
+            </TabsContent>
+          </div>
         </Tabs>
       </div>
     </div>

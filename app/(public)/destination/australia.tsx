@@ -3,8 +3,8 @@
 import { Post, usePosts } from "@/context/PostsContext";
 import Image from "next/image";
 
-export default function NorthAmerica() {
-  const { northAmerica, isLoading } = usePosts();
+export default function Australia() {
+  const { australia, isLoading } = usePosts();
 
   if (isLoading) {
     return (
@@ -14,7 +14,7 @@ export default function NorthAmerica() {
     );
   }
 
-  if (northAmerica.length === 0) {
+  if (australia.length === 0) {
     return (
       <div className="flex justify-center items-center">
         <p>No Blog for now</p>
@@ -25,7 +25,7 @@ export default function NorthAmerica() {
   return (
     <div className="w-full">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-[50px]">
-        {northAmerica.map((item: Post) => (
+        {australia.map((item: Post) => (
           <div key={item._id}>
             <div className="h-[360px] relative">
               {item.image && (
