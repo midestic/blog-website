@@ -13,6 +13,7 @@ import {
 } from "@/components/navigation-menu";
 import { CircleAlertIcon } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -47,6 +48,8 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
+
   return (
     <div
       className="
@@ -62,13 +65,20 @@ export function Navbar() {
         </div>
 
         <NavigationMenuList>
-          {components.map((item) => (
-            <NavigationMenuItem key={item.title}>
-              <NavigationMenuLink asChild>
-                <Link href={item.href}>{item.title}</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          ))}
+          {components.map((item) => {
+            const isCurrentPage = pathname === item.href;
+
+            return (
+              <NavigationMenuItem key={item.title}>
+                <NavigationMenuLink
+                  className={`${isCurrentPage && "bg-primary-color text-white"}  `}
+                  asChild
+                >
+                  <Link href={item.href}>{item.title}</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            );
+          })}
         </NavigationMenuList>
       </NavigationMenu>
     </div>
