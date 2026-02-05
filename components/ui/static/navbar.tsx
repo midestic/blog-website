@@ -48,7 +48,6 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
   return (
-    // <div className="z-10 flex justify-center fixed w-full">
     <div
       className="
   fixed z-10 w-full flex justify-center
