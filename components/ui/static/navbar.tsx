@@ -64,7 +64,7 @@ export function Navbar() {
           <Image src={"/icons/Logo.svg"} width={133} height={55} alt="logo" />
         </div>
 
-        <NavigationMenuList>
+        <NavigationMenuList className="max-md:hidden">
           {components.map((item) => {
             const isCurrentPage = pathname === item.href;
 

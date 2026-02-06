@@ -16,7 +16,7 @@ export default function page() {
         <p className="font-[800] text-[64px] text-white">About us</p>
       </div>
 
-      <div className="px-[50px]">
+      <div className="px-[50px] max-md:px-[20px]">
         <SectionOne />
 
         <div className="mt-[100px] grid grid-cols-1 sm:grid-cols-2 gap-[100px]">
@@ -40,8 +40,6 @@ export default function page() {
       <div>
         <SectionSix />
       </div>
-
-      {/* <Slider /> */}
     </div>
   );
 }

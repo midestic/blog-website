@@ -83,7 +83,7 @@ function DestinationTrigger({
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
       className={cn(
-        " font-[700] p-[20px] text-[24px]  flex justify-center items-center h-[88px] w-full data-[state=active]:bg-primary-color data-[state=active]:text-white dark:data-[state=active]:text-white dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 ",
+        " font-[700] p-[20px] text-[24px] max-md:text-[16px]  flex justify-center items-center h-[88px] w-full data-[state=active]:bg-primary-color data-[state=active]:text-white dark:data-[state=active]:text-white dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 ",
         className,
       )}
       {...props}

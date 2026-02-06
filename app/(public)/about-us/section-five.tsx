@@ -1,15 +1,15 @@
 export default function SectionFive() {
   return (
-    <div className="space-y-[50px] px-[124px]">
-      <div className="py-[100px] flex justify-between items-center ">
-        <div className="w-[50%]">
+    <div className="space-y-[50px] px-[124px] max-md:px-[20px]">
+      <div className="py-[100px] flex justify-between items-center max-md:flex-col">
+        <div className="w-[50%] max-md:w-full">
           <p className="font-[400] text-[40px] text-[#4E4B66]">
             What
             <span className="text-secondary-color">Customer says</span> About
             us?
           </p>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] max-md:w-full">
           <p className="font-[700] text-[18px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mor
             mattis nec etiam ac. Bibendum tellus mi imperdiet amet maecenas

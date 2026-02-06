@@ -8,7 +8,7 @@ export default function ContactForm() {
         PLEASE, FEEL YOURSELF COMFORTABLE TO FILL IN OUR CONTACT FORM
       </p>
 
-      <form className="w-[70%] mx-auto space-y-[50px]" action="">
+      <form className="w-[70%] mx-auto space-y-[50px] max-md:w-[90%]" action="">
         <div className=" grid grid-cols-1 sm:grid-cols-2 gap-[50px]">
           <ContactInput placeholder="First Name" />
 

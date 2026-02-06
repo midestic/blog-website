@@ -35,8 +35,8 @@ export default function Product() {
 
       <div className="space-y-[40px]">
         {post.map((post, i) => (
-          <div className="flex gap-[10px] px-[20px]" key={i}>
-            <div className="w-[106px] h-[80px] relative">
+          <div className="flex gap-[10px] px-[20px] max-md:flex-col" key={i}>
+            <div className="w-[106px] h-[80px] relative max-md:w-full max-md:h-[150px]">
               <Image
                 src={post.img}
                 fill

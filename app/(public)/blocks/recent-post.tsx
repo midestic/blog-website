@@ -39,12 +39,12 @@ export default function RecentPost() {
 
       <div className="space-y-[40px]">
         {post.map((post, i) => (
-          <div className="flex gap-[10px] px-[20px]" key={i}>
-            <div className="w-[100px] h-[80px] relative">
+          <div className="flex gap-[10px] px-[20px] max-md:flex-col" key={i}>
+            <div className="w-[100px] h-[80px] relative max-md:w-full max-md:h-[150px]">
               <Image
                 src={"/icons/p1.svg"}
                 fill
-                className="object-cover"
+                className="object-cover "
                 alt="first-post"
               />
             </div>

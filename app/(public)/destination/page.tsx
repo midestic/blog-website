@@ -22,14 +22,14 @@ export default function page() {
         <p className="font-[800] text-[64px] text-white">Destination</p>
       </div>
 
-      <div className="py-[100px] flex justify-between items-center px-[124px]">
-        <div className="w-[50%]">
+      <div className="py-[100px] flex justify-between items-center px-[124px] max-md:flex-col max-md:px-[20px]">
+        <div className="w-[50%] max-md:w-full">
           <p className="font-[400] text-[40px] text-[#4E4B66]">
             <span className="text-secondary-color">Where do</span>
             you want to go?
           </p>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] max-md:w-full">
           <p className="font-[700] text-[18px]">
             Bala blu umbreleda eba tia-tia youths down-payment recruit our pdapc
             transmission eneme different recruit blu army eba eneme bala symbol
@@ -40,15 +40,23 @@ export default function page() {
         </div>
       </div>
 
-      <div className="w-full px-[124px]">
+      <div className="w-full px-[124px] max-md:px-[20px]">
         <Tabs defaultValue="south" className="w-full ">
-          <TabsList className="flex justify-between w-full bg-white">
-            <DestinationTrigger value="south">South America</DestinationTrigger>
-            <DestinationTrigger value="north">North America</DestinationTrigger>
-            <DestinationTrigger value="europe">Europe</DestinationTrigger>
-            <DestinationTrigger value="africa">Africa</DestinationTrigger>
-            <DestinationTrigger value="australia">Australia</DestinationTrigger>
-            <DestinationTrigger value="asia">Asia</DestinationTrigger>
+          <TabsList className="flex justify-between w-full bg-white  ">
+            <div className="max-md:overflow-x-scroll w-full flex justify-between">
+              <DestinationTrigger value="south">
+                South America
+              </DestinationTrigger>
+              <DestinationTrigger value="north">
+                North America
+              </DestinationTrigger>
+              <DestinationTrigger value="europe">Europe</DestinationTrigger>
+              <DestinationTrigger value="africa">Africa</DestinationTrigger>
+              <DestinationTrigger value="australia">
+                Australia
+              </DestinationTrigger>
+              <DestinationTrigger value="asia">Asia</DestinationTrigger>
+            </div>
           </TabsList>
 
           <div className="mt-[100px]">

@@ -66,9 +66,9 @@ export default function PopularPost() {
             ))}
           </CarouselContent>
 
-          <div className="">
+          <div className="border">
             <Previous className="left-4 translate-y-[100px]" />
-            <Next className="right-4 translate-y-[100px] translate-x-[-360px]" />
+            <Next className="right-4 translate-y-[100px] translate-x-[-360px] max-md:translate-x-[-100px]" />
           </div>
         </Carousel>
       </div>

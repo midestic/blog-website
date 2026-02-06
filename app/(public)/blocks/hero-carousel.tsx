@@ -34,15 +34,15 @@ export function HeroSection() {
       <CarouselContent className="h-screen">
         {heroImages.map((src, index) => (
           <CarouselItem key={index} className="h-full">
-            <div className="z-10 absolute text-black w-full h-[80vh] flex justify-center items-center">
-              <div className="flex flex-col items-center gap-[30px] w-[60%]">
-                <p className="font-[700px] text-[30px] text-white">
+            <div className="z-10 absolute text-black w-full h-[80vh] flex justify-center items-center max-md:items-end">
+              <div className="flex flex-col items-center gap-[30px] w-[60%] max-md:w-[90%]">
+                <p className="font-[700px] text-[30px] text-white max-md:text-center">
                   THE COUNTER: <span className="text-secondary-color">70</span>{" "}
                   Countries <span className="text-secondary-color">1036</span>{" "}
                   Cities
                 </p>
 
-                <p className="font-[800] text-[64px] text-white  text-center leading-[69px]">
+                <p className="max-md:text-[24px] max-md:text-center font-[800] text-[64px] text-white  text-center leading-[69px]">
                   Leave your mark on all over the world
                 </p>
 

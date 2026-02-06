@@ -19,7 +19,7 @@ export default function Home() {
     <div className="space-y-[50px]">
       <HeroSection />
 
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-[50px] px-[50px] bg-[#f4f4f4]">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-[50px] px-[50px] bg-[#f4f4f4] max-md:px-[20px]">
         <div className="flex flex-col gap-[50px] ">
           <AboutMe />
           <Categories />

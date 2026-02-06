@@ -12,24 +12,24 @@ export default function Footer() {
         <Subscribe />
       </div>
       <div className="border border-b">
-        <div className="py-[70px] px-[200px] flex justify-between bg-white">
-          <div className="w-[30%] border">
+        <div className="py-[70px] px-[200px] flex justify-between bg-white max-md:flex-col">
+          <div className="w-[30%] border max-md:w-full">
             <Image src={"/icons/Logo.svg"} width={149} height={63} alt="logo" />
           </div>
-          <div className="w-[60%] flex justify-between items-center ">
-            <div className="w-[20%]">
+          <div className="w-[60%] flex justify-between items-center max-md:w-full max-md:flex-col max-md:gap-[50px] max-md:items-center">
+            <div className="w-[20%] max-md:w-full">
               <span className="font-[700] text-[16px]">Body</span>
             </div>
-            <div className="w-[20%]">
+            <div className="w-[20%] max-md:w-full">
               <span className="font-[700] text-[16px]">Travel</span>
             </div>
-            <div className="w-[20%]">
+            <div className="w-[20%] max-md:w-full">
               <span className="font-[700] text-[16px]">Account</span>
             </div>
           </div>
         </div>
-        <div className="py-[50px] px-[200px] bg-[#535353] flex justify-between pb-[100px] border border-b-white">
-          <div className="w-[30%] space-y-[40px]">
+        <div className="py-[50px] px-[200px] bg-[#535353] flex justify-between pb-[100px] border border-b-white max-md:flex-col max-md:px-[20px]">
+          <div className="w-[30%] space-y-[40px] max-md:w-full">
             <p className="font-[400] text-[16px] text-white">
               We are location independent bloggers, digital influencers, small
               group tour organizers and world travelers with a serious passion
@@ -43,15 +43,15 @@ export default function Footer() {
               countries later and we are still on the road.
             </p>
           </div>
-          <div className="w-[60%] flex justify-between items-start font-[400] text-[16px] text-white">
-            <div className="space-y-[40px] w-[20%]">
+          <div className="w-[60%] flex justify-between items-start font-[400] text-[16px] text-white max-md:w-full max-md:flex-col max-md:gap-[40px]">
+            <div className="space-y-[40px] w-[20%] max-md:w-full">
               <p>Add: 221B John hope Street, Lekki, Lagos, Nigeria.</p>
               <p>T: +234 706 507 8544</p>
               <p>E: info@redexplorers.com</p>
               <p>W: www. redexplorers.com</p>
             </div>
 
-            <div className="w-[20%]">
+            <div className="w-[20%] max-md:w-full">
               <ul className="space-y-[40px]">
                 <li>My List</li>
                 <li>My Requests</li>
@@ -61,7 +61,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="w-[20%]">
+            <div className="w-[20%] max-md:w-full">
               <ul className="space-y-[40px]">
                 <li>Travel</li>
                 <li>Why Travel</li>
@@ -72,7 +72,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="px-[200px] py-[50px] bg-[#535353] flex justify-between items-center">
+        <div className="px-[200px] py-[50px] bg-[#535353] flex justify-between items-center max-md:flex-col max-md:px-[20px] max-md:gap-[40px]">
           <Image
             src={"/icons/side-hustle.svg"}
             width={189}

@@ -20,7 +20,7 @@ const card = [
 
 export default function SectionSix() {
   return (
-    <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-[40px] px-[124px]">
+    <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-[40px] px-[124px] max-md:px-[20px]">
       {card.map((item, i) => (
         <div
           key={i}

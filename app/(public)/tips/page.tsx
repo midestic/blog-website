@@ -11,7 +11,7 @@ export default function page() {
         <p className="font-[800] text-[64px] text-white">Travel Tips</p>
       </div>
 
-      <div className="px-[100px] space-y-[50px]">
+      <div className="px-[100px] space-y-[50px] max-md:px-[20px]">
         <SectionOne />
 
         <TipsGrid />

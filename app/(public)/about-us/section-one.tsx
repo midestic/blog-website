@@ -1,14 +1,14 @@
 export default function SectionOne() {
   return (
     <div className="space-y-[50px]">
-      <div className="py-[100px] flex justify-between items-center ">
-        <div className="w-[50%]">
+      <div className="py-[100px] flex justify-between items-center max-md:flex-col">
+        <div className="w-[50%] max-md:w-full">
           <p className="font-[400] text-[40px] text-[#4E4B66]">
             Hey, We are the Red Explorers Brief History{" "}
             <span className="text-secondary-color">About Us</span> .
           </p>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] max-md:w-full">
           <p className="font-[700] text-[18px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mor
             mattis nec etiam ac. Bibendum tellus mi imperdiet amet maecenas
